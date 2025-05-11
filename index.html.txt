@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            color: red;
+            font-size: 40px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: red;
+            color: white;
+        }
+        .no {
+            background-color: white;
+            color: red;
+            position: absolute;
+        }
+    </style>
+    <script>
+        function moveNoButton() {
+            let btn = document.getElementById("noButton");
+            let x = Math.random() * window.innerWidth - 100;
+            let y = Math.random() * window.innerHeight - 50;
+            btn.style.left = x + "px";
+            btn.style.top = y + "px";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine? Raksha babe❤️</h1>
+        <p>chito YES VAN</p>
+        <div class="buttons">
+            <button class="yes" onclick="alert('Yay! Can’t wait! ❤️')">Yes!</button>
+            <button class="no" id="noButton" onmouseover="moveNoButton()">No😢(ekchoti yo pani try gar)</button>
+        </div>
+    </div>
+</body>
+</html>
